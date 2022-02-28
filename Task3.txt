@@ -1,0 +1,33 @@
+Deployment Steps
+
+1.To deploy the firebase function first of all need to install firebase
+    $>npm install -g firebase-tools
+
+2.Then login to the firebase using the credentials.
+    $>fireabase login
+
+3.initilize firebase project
+    $>firebase init
+
+4.select features from given list
+    .firestore
+    .functions
+
+5.select the name of the project from the existing project
+
+6.select firebase default rules (press enter)
+
+7.select default firebase index (press enter)
+
+8.select typescript from the given language
+
+9.use eslint : yes
+
+10.install dependencies with npm: yes
+
+11.write function's code in index.ts 
+
+12. deploy the function by this command
+    $>firebase deploy --only functions
+    
+

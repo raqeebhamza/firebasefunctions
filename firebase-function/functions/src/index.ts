@@ -18,5 +18,5 @@ function calculatePercentiles(){
     return {tenThPercnetile,fiftyThPercnetile,ninetyThPercnetile}
 }
 export const getPercentiles = functions.https.onRequest((request, response) => {
-  response.send(calculatePercentiles());
+  response.send(JSON.stringify(calculatePercentiles()));
 });
